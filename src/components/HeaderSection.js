@@ -11,12 +11,15 @@ import {
 } from 'semantic-ui-react';
 
 export default class HeaderSection extends Component {
-    constructor() {
-        super();
-        this.state = { activeItem: 'home' }
+    constructor(props) {
+        super(props);
+        this.state = { 
+            activeItem: 'home'
+        }
+    }  
 
-    }
     handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+
     render() {
         const { activeItem } = this.state
         return (
@@ -34,12 +37,12 @@ export default class HeaderSection extends Component {
                     />
                     <Menu.Item
                         name='genres'
-                        active={activeItem === 'Genres'}
+                        active={activeItem === 'genres'}
                         onClick={this.handleItemClick}
                     />
                     <Menu.Item
                         name='authors'
-                        active={activeItem === 'Authors'}
+                        active={activeItem === 'authors'}
                         onClick={this.handleItemClick}
                     />
                     <Menu.Menu position='right'>

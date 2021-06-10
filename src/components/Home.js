@@ -2,7 +2,7 @@ import HeaderSection from './HeaderSection';
 import CardExampleGroupCentered from './BodySection';
 import { Divider } from 'semantic-ui-react';
 
-const MainWrapper = () => {
+const Home = () => {
     return (
         <div>
             <div className="header-section">
@@ -16,4 +16,4 @@ const MainWrapper = () => {
     );
 }
 
-export default MainWrapper;
+export default Home;
